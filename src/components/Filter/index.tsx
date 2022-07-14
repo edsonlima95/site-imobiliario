@@ -1,15 +1,20 @@
 import { MagnifyingGlass } from "phosphor-react";
+import Title from "../Title";
 
 
 
 function Filter() {
 
     return (
-        <div className="flex flex-col items-center justify-center">
-            <div className="flex flex-col items-center mt-24 mb-10">
-                <span className="text-4xl font-bold text-gray-800 mb-5">Não encontrou um <strong className="text-red-600">imóvel ainda?</strong></span>
-                <span className="text-gray-400 text-xl">Busque pelo imóvel que mais tem a sua cara <br /> e seja feliz você e sua familia de casa nova</span>
-            </div>
+        <section className="flex flex-col items-center justify-center">
+            
+            
+            <Title 
+                title="Não encontrou um"
+                subTitle="imóvel ainda?"
+                description="Busque pelo imóvel que mais tem a sua cara 
+                e seja feliz você e sua familia de casa nova"/>
+
             <div className="shadow-lg rounded p-5 min-h-[100px] w-8/12">
                 <form>
                     <div className="flex gap-3">
@@ -61,7 +66,7 @@ function Filter() {
 
                 </form>
             </div>
-        </div>
+        </section>
     )
 
 }
