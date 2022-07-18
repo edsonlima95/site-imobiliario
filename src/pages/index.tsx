@@ -1,3 +1,4 @@
+import { House, HouseSimple } from "phosphor-react"
 import Card from "../components/Card"
 import Filter from "../components/Filter"
 import Title from "../components/Title"
@@ -23,6 +24,7 @@ function Home() {
             <img src="/images/bg.svg" alt="" className="w-[450px]" />
           </div>
         </div>
+
         {/* FILTRO*/}
         <Filter />
 
@@ -42,8 +44,33 @@ function Home() {
           </div>
         </section>
 
+        {/* SERVIÇOS */}
+        <section className="container mx-auto mt-24">
+          <div className="flex justify-center">
+            <Title title="Econtre a melhor solução" subTitle="para você" description="Todos os nossos serviços" />
+          </div>
+
+          <div className="flex justify-around">
+            <div className="shadow-xl p-5 text-center w-3/12">
+              <House size={44} className="text-red-500 inline-block mb-3" />
+              <h3 className="text-gray-800 font-bold text-2xl mb-2">Anuncie seu imóvel</h3>
+              <p className="text-gray-600">Anuncie seu imóvel totalmente grátis</p>
+            </div>
+            <div className="shadow-xl p-5 text-center w-3/12">
+              <House size={44} className="text-red-500 inline-block mb-3" />
+              <h3 className="text-gray-800 font-bold text-2xl mb-2">Financiamento</h3>
+              <p className="text-gray-600">Melhores taxas do mercado</p>
+            </div>
+            <div className="shadow-xl p-5 text-center w-3/12">
+              <House size={44} className="text-red-500 inline-block mb-3" />
+              <h3 className="text-gray-800 font-bold text-2xl mb-2">Consórcio</h3>
+              <p className="text-gray-600">Maneira mais eficiente de comprar seu imóvel</p>
+            </div>
+          </div>
+        </section>
+
         {/* IMÓVEL */}
-        <section className="p-5">
+        <section className="p-5 mt-24">
 
           <div className="flex justify-center">
             <Title title="Novos imóveis todos" subTitle="os dias" description="Confora abaixo todos os imóveis disponívei" />
@@ -99,6 +126,32 @@ function Home() {
 
           </div>
         </section>
+
+        {/* CATEGORIA */}
+        <section className="container mx-auto mt-24">
+          <div className="flex justify-center">
+            <Title title="Escolha a melhor" subTitle="categoria " description="A melhor categoria que mais se ecaixa no seu perfil" />
+          </div>
+          <div className="flex justify-around">
+            <div className="w-3/12 group hover:scale-105 duration-500 relative">
+              <div className="absolute bottom-0 opacity-25 duration-700 group-hover:opacity-50 group-hover:flex group-hover:w-full group-hover:h-full group-hover:bg-black group-hover:rounded"></div>
+              <img src="/images/casa.jpg" alt="" className="rounded" />
+              <a className="hidden group-hover:flex duration-1000 text-white text-2xl absolute bottom-3 left-3 font-bold">Casa</a>
+            </div>
+            <div className="w-3/12 group hover:scale-105 duration-500 relative">
+              <div className="absolute bottom-0 opacity-25 duration-700 group-hover:opacity-50 group-hover:flex group-hover:w-full group-hover:h-full group-hover:bg-black group-hover:rounded"></div>
+              <img src="/images/apartamento.jpg" alt="" className="rounded" />
+              <a className="hidden group-hover:flex duration-1000 text-white text-2xl absolute bottom-3 left-3 font-bold">Apartamento</a>
+            </div>
+            <div className="w-3/12 group hover:scale-105 duration-500 relative">
+              <div className="absolute bottom-0 opacity-25 duration-700 group-hover:opacity-50 group-hover:flex group-hover:w-full group-hover:h-full group-hover:bg-black group-hover:rounded"></div>
+              <img src="/images/condominio.jpg" alt="" className="rounded" />
+              <a className="hidden group-hover:flex duration-1000 text-white text-2xl absolute bottom-3 left-3 font-bold">Condominio</a>
+            </div>
+          </div>
+        </section>
+
+        
       </Layout>
     </>
   )
