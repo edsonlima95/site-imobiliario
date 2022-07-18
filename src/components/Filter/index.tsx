@@ -6,13 +6,13 @@ import Title from "../Title";
 function Filter() {
 
     return (
-        <section className="flex flex-col items-center justify-center">
+        <section className="flex flex-col items-center justify-center mt-32">
             
             
             <Title 
                 title="Não encontrou um"
                 subTitle="imóvel ainda?"
-                description="Busque pelo imóvel que mais tem a sua cara 
+                description="Encontre pelo imóvel que mais tem a sua cara 
                 e seja feliz você e sua familia de casa nova"/>
 
             <div className="shadow-lg rounded p-5 min-h-[100px] w-8/12">
