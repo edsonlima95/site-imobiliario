@@ -1,13 +1,17 @@
-import { House, HouseSimple } from "phosphor-react"
 import Card from "../components/Card"
+import Cta from "../components/Cta"
 import Filter from "../components/Filter"
+import Service from "../components/Solution"
 import Title from "../components/Title"
 import Layout from "./Layout"
 
 function Home() {
+
+  
   return (
     <>
       <Layout>
+
         {/* HERO */}
         <div className="grid grid-cols-2 mt-32">
           <div className="flex flex-col pl-20">
@@ -45,35 +49,13 @@ function Home() {
         </section>
 
         {/* SERVIÇOS */}
-        <section className="container mx-auto mt-24">
-          <div className="flex justify-center">
-            <Title title="Econtre a melhor solução" subTitle="para você" description="Todos os nossos serviços" />
-          </div>
-
-          <div className="flex justify-around">
-            <div className="shadow-xl p-5 text-center w-3/12">
-              <House size={44} className="text-red-500 inline-block mb-3" />
-              <h3 className="text-gray-800 font-bold text-2xl mb-2">Anuncie seu imóvel</h3>
-              <p className="text-gray-600">Anuncie seu imóvel totalmente grátis</p>
-            </div>
-            <div className="shadow-xl p-5 text-center w-3/12">
-              <House size={44} className="text-red-500 inline-block mb-3" />
-              <h3 className="text-gray-800 font-bold text-2xl mb-2">Financiamento</h3>
-              <p className="text-gray-600">Melhores taxas do mercado</p>
-            </div>
-            <div className="shadow-xl p-5 text-center w-3/12">
-              <House size={44} className="text-red-500 inline-block mb-3" />
-              <h3 className="text-gray-800 font-bold text-2xl mb-2">Consórcio</h3>
-              <p className="text-gray-600">Maneira mais eficiente de comprar seu imóvel</p>
-            </div>
-          </div>
-        </section>
+        <Service />
 
         {/* IMÓVEL */}
         <section className="p-5 mt-24">
 
           <div className="flex justify-center">
-            <Title title="Novos imóveis todos" subTitle="os dias" description="Confora abaixo todos os imóveis disponívei" />
+            <Title title="Novos imóveis todos" subTitle="os dias" description="Confora abaixo todos os imóveis disponíveis" />
           </div>
 
           <div className="grid grid-cols-4 gap-3">
@@ -128,9 +110,9 @@ function Home() {
         </section>
 
         {/* CATEGORIA */}
-        <section className="container mx-auto mt-24">
+        <section className="container mx-auto mt-32">
           <div className="flex justify-center">
-            <Title title="Escolha a melhor" subTitle="categoria " description="A melhor categoria que mais se ecaixa no seu perfil" />
+            <Title title="Todas as" subTitle="categorias" description="Escolha o que mais se ecaixa no seu perfil" />
           </div>
           <div className="flex justify-around">
             <div className="w-3/12 group hover:scale-105 duration-500 relative">
@@ -151,7 +133,9 @@ function Home() {
           </div>
         </section>
 
-        
+        {/* EMAIL */}
+        <Cta />
+
       </Layout>
     </>
   )
