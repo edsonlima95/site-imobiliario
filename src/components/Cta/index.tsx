@@ -1,8 +1,5 @@
 import { MagnifyingGlass } from "phosphor-react"
 
-
-
-
 function Cta() {
 
     return (

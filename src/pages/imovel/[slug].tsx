@@ -1,4 +1,8 @@
 import { GetServerSideProps } from "next"
+import Card from "../../components/Card"
+import Cta from "../../components/Cta"
+import ContentLef from "../../components/Imobil/ContentLeft"
+import ContentRight from "../../components/Imobil/ContentRight"
 import Layout from "../Layout"
 
 function Imovel() {
@@ -7,13 +11,34 @@ function Imovel() {
         <Layout>
             <section className="p-5">
                 <div className="flex">
-                    <div className="w-7/12">
-                        <img src="/images/casa.jpg" alt="" className="rounded"/>
-                    </div>
-                    <div className="w-5/12"></div>
+                    <ContentLef />
+                    <ContentRight />
+                </div>
+
+            </section>
+            {/* IMÓVEL */}
+            <section className="p-5">
+                <h4 className="text-gray-800 text-3xl my-8 font-bold">Talvez você também tenha interesse</h4>
+                <div className="grid grid-cols-4 gap-3">
+
+                    <Card
+                        title="Apartamento"
+                        cover="cover"
+                        address="Vila União"
+                        number={28}
+                        neighborhood="Praça Santo Antônio"
+                        area={200}
+                        room={2}
+                        bathRoom={2}
+                        garage={2}
+                    />
+
                 </div>
             </section>
-        </Layout>
+            
+            {/* EMAIL */}
+            <Cta />
+        </Layout >
     )
 
 }
